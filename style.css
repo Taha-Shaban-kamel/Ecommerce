@@ -1,0 +1,437 @@
+:root{
+    --wh-bg-color: #FFFFFF;
+    --primary:#0D6EFD;
+    --gray-500: #8B96A5 ;
+    --dark :#1C1C1C;
+    --border-bg:#E0E0E0;
+    --gray-100 :#F7FAFC;
+    --produc-border-color:#E0E0E0;
+    --red-bg :#FFE3E3;
+    --gray-800:#606060;
+    --binner-li-:#E5F1FF;
+    --userAvatar-bg:#91B1E7;
+    --uerOff-bg:#F38332 ;
+    --sendQuotes:#55BDC3;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a{
+  color: var(--gray-500);
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--gray-100);
+  }
+  a{
+    text-decoration: none;
+  }
+  header {
+    background: var(--wh-bg-color);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--border-bg);
+  }
+  nav {
+    width: 100%;
+    border-bottom: 1px solid var(--border-bg);
+    background: var(--wh-bg-color);
+  }
+  .navbar-nav .nav-item .nav-link{
+    color: black;
+  }
+  .nav-link{
+    margin-left: 5px;
+    text-transform: capitalize;
+    color: black;
+
+  }
+  .ship{
+    margin-right: 5rem !important;
+  }
+  .brand-icon {
+    margin-right: 10px;
+  }
+
+  .search-bar {
+    width: 41em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+
+  }
+ .categories-menu,
+  .search-button,.search-input{
+    height: 40px;
+  }
+  .search-input {
+    width:70%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid var(--primary);
+    outline: var(--primary);
+    border-right-width: 1px;
+  }
+  .search-input::placeholder{
+    color: var(--gray-500);
+    letter-spacing: .02cm;
+  }
+  .categories-menu {
+    padding: 10px;
+    color: var(--dark);
+    border: none;
+    outline: var(--primary);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    border-left-width: 1px;
+  }
+
+  .search-button {
+    width: 8em;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  .icons{
+    width: 22.25rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .icons a {
+    color: var(--gray-500);
+    font-size: 1rem;
+   }
+  .icons a img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .home{
+    width: 90%;
+    height: 25rem;
+    margin: 30px 0 ;
+    margin: 30px auto;
+    background: var(--wh-bg-color);
+    display: flex;
+    padding: 20px;
+    gap: 11px;
+    box-shadow: var(--gray-500);
+
+  }
+  .home ul {
+    height: 360px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home ul li{
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+  }
+  .home ul li:first-child{
+    background: var(--binner-li-);
+  }
+  .home ul li:hover{
+    background: var(--binner-li-);
+  }
+  .home ul li a{
+    color: var(--dark);
+    text-decoration: none;
+
+  }
+  .binnar{
+    width: 50rem;
+    height: 360px;
+    background: url(./assets/products/Banner-board-800x420\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 0 45px;
+    text-transform: capitalize;
+
+  }
+  .binnar span{
+    font-size: 28px;
+  }
+  .binnar h1{
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .binnar button{
+    width: 119;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .binnar button a{
+    color: var(--dark);
+    text-transform:capitalize;
+    text-decoration: none;
+  }
+
+  .userAndOof{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .userForm{
+    width: 100%;
+    height: 9.3rem;
+    background: var(--binner-li-);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+  }
+  .userAndOof .userAvatar{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-top: .5rem;
+  }
+  .userAndOof .userAvatar img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--userAvatar-bg);
+
+  }
+  .userAndOof .lognBnts{
+    width: 100%;
+  }
+  .userAndOof .lognBnts button{
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: .5rem;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+  }
+  .userAndOof .lognBnts button:first-child{
+    background: var(--primary);
+  }
+  .userAndOof .lognBnts button:first-child a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .userAndOof .off,.sendQuotes {
+    color: white;
+    width: 100%;
+    height: 95px;
+    background:var(--uerOff-bg) ;
+    padding:16px 0 0 16px  ;
+    border-radius: 6px;
+  }
+  .sendQuotes{
+    background: var(--sendQuotes);
+  }
+  .dealsAndOffers{
+    width: 90%;
+    height: 15rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--produc-border-color);
+
+  }
+  .dealsCounter{
+    width: 20%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+  .dealsCounter .dealsTitle span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: var(--dark);
+  }
+  .dealsCounter .dealsTitle p{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray-500);
+  }
+  .countersDown{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+    margin-top: 18px;
+
+  }
+  .countersDown .counter{
+    width: 45px;
+    height: 50px;
+    background: var(--gray-800);
+    border-radius: 4px;
+    color: white;
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .countersDown  .title{
+    display: block;
+  }
+  .dealsProducts{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .productSale{
+    width: calc(100%/5);
+    height: 100%;
+    border: 1px solid var(--produc-border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+  }
+  .productSale span
+  {
+    width: 61px;
+    height: 28px;
+    line-height:28px;
+    text-align: center;
+    background:   var(--red-bg);
+    border-radius: 29px;
+    color: red;
+    }
+  .dealsProducts .productSale img{
+    width: 101px;
+    height: 121px;
+  }
+  .products{
+    width: 90%;
+    height: 16rem;
+    /* border: 1px solid red; */
+    padding-top: 3rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+  }
+
+  .gridItem{
+    border: 1px solid var(--produc-border-color);
+  }
+  .gridItem:first-child{
+    width: 17.5rem;
+    background: url(./assets/products/Group\ 969.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row:2 span;
+    border: none;
+  }
+  .gridItem .productTitle
+  {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 16px;
+    width: 133px;
+    color: var(--dark);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .gridItem .productDetials{
+    width: 100%;
+    /* height: 70%; */
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .gridItem .productDetials span{
+    display: inline-block;
+    width: 97px;
+    margin-left: 16px;
+    margin-top: 9px;
+    color: var(--gray-500);
+  }
+  .gridItem .productDetials img{
+    width: 100px;
+    height: 100px;
+    padding: .5rem;
+  }
+  .outdoor h4,.outdoor button{
+    text-transform: capitalize;
+    margin: 20px;
+  }
+  .outdoor h4{
+    font-family: 'Inter';
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .outdoor button{
+    width: 123px;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .outdoor button a{
+
+    color: var(--dark);
+    margin-top: 19px;
+    text-decoration: none;
+  }
+  .secound{
+    margin-top: 5rem;
+  }
+  .secound .gridItem:first-child{
+    background: url(./assets/products/Group\ 970.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
